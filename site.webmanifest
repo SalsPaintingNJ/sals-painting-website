@@ -1,0 +1,20 @@
+{
+  "name": "Sal's Painting & Basic Renovations",
+  "short_name": "Sal's Painting",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fffaf5",
+  "theme_color": "#071f5c",
+  "icons": [
+    {
+      "src": "SalsLogo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "SalsLogo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
