@@ -1,8 +1,10 @@
 {
   "name": "Sal's Painting & Basic Renovations",
   "short_name": "Sal's Painting",
-  "start_url": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "description": "Professional painting and basic renovations in Carteret and Central New Jersey. Free estimates — call or text (727) 644-7674.",
   "background_color": "#fffaf5",
   "theme_color": "#071f5c",
   "icons": [

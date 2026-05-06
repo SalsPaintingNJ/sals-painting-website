@@ -37,6 +37,27 @@ if ("IntersectionObserver" in window && revealItems.length) {
 }
 
 const estimateForm = document.getElementById("estimate-form");
+// Footer year
+const footerYear = document.getElementById("footer-year");
+if (footerYear) {
+  footerYear.textContent = new Date().getFullYear();
+}
+
+// FAQ accordion — close others when one opens
+const faqItems = document.querySelectorAll(".faq-item");
+faqItems.forEach((item) => {
+  item.addEventListener("toggle", () => {
+    if (item.open) {
+      faqItems.forEach((other) => {
+        if (other !== item && other.open) {
+          other.open = false;
+        }
+      });
+    }
+  });
+});
+
+const estimateForm = document.getElementById("estimate-form");
 const formFeedback = document.getElementById("form-feedback");
 
 function buildSmsUrl(message) {
