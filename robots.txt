@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://salspaintingrenovation.com/sitemap.xml
+LLMs: https://salspaintingrenovation.com/llms.txt
