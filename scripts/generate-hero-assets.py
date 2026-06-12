@@ -14,8 +14,8 @@ OUT.mkdir(parents=True, exist_ok=True)
 HERO = ROOT / "Images" / "SalsHeroImage.png"
 HERO_MOBILE = ROOT / "Images" / "SalsHeroImage-mobile.jpg"
 
-# Tall column crops — 900px wide stays sharp on ultrawide up to ~3600px viewport.
-PANEL_SIZE = (900, 1013)
+# Portrait crops for ~25% hero columns; 600px wide holds up on retina without upscaling past source.
+PANEL_SIZE = (600, 900)
 MOBILE_PANEL_SIZE = (900, 1350)
 
 
@@ -34,33 +34,21 @@ def focal_cover(im: Image.Image, size: tuple[int, int], fx: float, fy: float = 0
     return resized.crop((left, top, left + target_w, top + target_h))
 
 
-def quarter_slices(im: Image.Image, num_cols: int = 4) -> list[Image.Image]:
-    """Split banner into equal non-overlapping vertical strips (no tiling at wide widths)."""
-    width, height = im.size
-    slice_w = width // num_cols
-    slices: list[Image.Image] = []
-    for index in range(num_cols):
-        left = index * slice_w
-        right = width if index == num_cols - 1 else left + slice_w
-        slices.append(im.crop((left, 0, right, height)))
-    return slices
-
-
 def save_webp(path: Path, im: Image.Image, quality: int = 88) -> None:
     im.save(path, "WEBP", quality=quality, method=6)
 
 
 hero = Image.open(HERO).convert("RGB")
 
-# Homepage four sliding columns — equal quarters so panels stitch without duplicating Sal.
-home_panel_names = [
-    "panel-left.webp",
-    "panel-top.webp",
-    "panel-bottom.webp",
-    "panel-right.webp",
+# Homepage four sliding columns — different horizontal slices of the sharp banner.
+home_panels = [
+    ("panel-left.webp", 0.14),
+    ("panel-top.webp", 0.38),
+    ("panel-bottom.webp", 0.62),
+    ("panel-right.webp", 0.86),
 ]
-for name, quarter in zip(home_panel_names, quarter_slices(hero)):
-    save_webp(OUT / name, focal_cover(quarter, PANEL_SIZE, 0.5, 0.48))
+for name, fx in home_panels:
+    save_webp(OUT / name, focal_cover(hero, PANEL_SIZE, fx, 0.48))
 
 mobile = Image.open(HERO_MOBILE).convert("RGB")
 save_webp(OUT / "panel-mobile.webp", focal_cover(mobile, MOBILE_PANEL_SIZE, 0.50, 0.42))

@@ -29,10 +29,10 @@ const S = {
 
 const H = "Images/hero";
 const HERO_PANELS = [
-  { src: `${H}/panel-left.webp`, w: 900, h: 1013 },
-  { src: `${H}/panel-top.webp`, w: 900, h: 1013 },
-  { src: `${H}/panel-bottom.webp`, w: 900, h: 1013 },
-  { src: `${H}/panel-right.webp`, w: 900, h: 1013 },
+  { src: `${H}/panel-left.webp`, w: 600, h: 900 },
+  { src: `${H}/panel-top.webp`, w: 600, h: 900 },
+  { src: `${H}/panel-bottom.webp`, w: 600, h: 900 },
+  { src: `${H}/panel-right.webp`, w: 600, h: 900 },
 ];
 const heroPanel = (n) => {
   const p = HERO_PANELS[(n - 1) % HERO_PANELS.length];
