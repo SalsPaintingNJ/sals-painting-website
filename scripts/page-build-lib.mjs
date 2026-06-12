@@ -108,15 +108,15 @@ export function heroPanelsGallery(nums, { mobileBottom = true } = {}) {
   const imgs = nums.map((n) => G(n));
   const bottom = mobileBottom
     ? `        <div class="hero-panel hero-panel--bottom hero-panel--photo">
-          <img class="hero-panel-img--desktop" src="${imgs[2]}" alt="" width="824" height="824" loading="lazy" decoding="async">
-          <img class="hero-panel-img--mobile" src="${imgs[2]}" alt="" width="824" height="824" loading="lazy" decoding="async">
+          <img class="hero-panel-img--desktop" src="${imgs[2]}" alt="" role="presentation" width="824" height="824" loading="lazy" decoding="async">
+          <img class="hero-panel-img--mobile" src="${imgs[2]}" alt="" role="presentation" width="824" height="824" loading="lazy" decoding="async">
         </div>`
-    : `        <div class="hero-panel hero-panel--bottom hero-panel--photo"><img src="${imgs[2]}" alt="" width="824" height="824" loading="lazy" decoding="async"></div>`;
+    : `        <div class="hero-panel hero-panel--bottom hero-panel--photo"><img src="${imgs[2]}" alt="" role="presentation" width="824" height="824" loading="lazy" decoding="async"></div>`;
   return `<div class="hero-panels" aria-hidden="true">
-        <div class="hero-panel hero-panel--left hero-panel--photo"><img src="${imgs[0]}" alt="" width="824" height="824" loading="lazy" decoding="async"></div>
-        <div class="hero-panel hero-panel--top hero-panel--photo"><img src="${imgs[1]}" alt="" width="824" height="824" loading="lazy" decoding="async"></div>
+        <div class="hero-panel hero-panel--left hero-panel--photo"><img src="${imgs[0]}" alt="" role="presentation" width="824" height="824" loading="lazy" decoding="async"></div>
+        <div class="hero-panel hero-panel--top hero-panel--photo"><img src="${imgs[1]}" alt="" role="presentation" width="824" height="824" loading="lazy" decoding="async"></div>
 ${bottom}
-        <div class="hero-panel hero-panel--right hero-panel--photo"><img src="${imgs[3]}" alt="" width="824" height="824" loading="lazy" decoding="async"></div>
+        <div class="hero-panel hero-panel--right hero-panel--photo"><img src="${imgs[3]}" alt="" role="presentation" width="824" height="824" loading="lazy" decoding="async"></div>
       </div>`;
 }
 

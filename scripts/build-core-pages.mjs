@@ -36,7 +36,7 @@ const HERO_PANELS = [
 ];
 const heroPanel = (n) => {
   const p = HERO_PANELS[(n - 1) % HERO_PANELS.length];
-  return `<img src="${p.src}" alt="" width="${p.w}" height="${p.h}" loading="eager" decoding="async">`;
+  return `<img src="${p.src}" alt="" role="presentation" width="${p.w}" height="${p.h}" loading="eager" decoding="async">`;
 };
 const GP = "Images/gallery/parallax";
 const PARALLAX = {
@@ -97,14 +97,14 @@ writeFileSync(
         <div class="hero-panel hero-panel--right hero-panel--photo">${heroPanel(4)}</div>
       </div>
       <div class="hero-cutout-wrap" aria-hidden="true">
-        <img class="hero-cutout" src="Images/SalBrochure-cutout.webp" alt="" width="1103" height="1426" loading="eager" decoding="async">
+        <img class="hero-cutout" src="Images/SalBrochure-cutout.webp" alt="" role="presentation" width="1103" height="1426" loading="eager" decoding="async">
       </div>
       <div class="hero-overlay" aria-hidden="true"></div>
       <div class="hero-content">
       <div class="container hero-inner">
         <aside class="hero-card hero-enter hero-enter--from-left hero-enter--d0" aria-label="Get a free quote">
           <p class="card-eyebrow">Get a free quote</p>
-          <h2 class="card-name">Talk to Sal Today</h2>
+          <p class="card-name">Talk to Sal Today</p>
           <p class="card-note">Fill out the form and Sal will get back to you about your project.</p>
           <form class="contact-form" action="${S.formspree}" method="POST" id="hero-contact-form">
             <div class="form-group"><label for="cf-name">Your Name</label><input type="text" id="cf-name" name="name" placeholder="First and last name" required autocomplete="name"></div>
@@ -120,7 +120,7 @@ writeFileSync(
             <div class="form-group"><label for="cf-message">Tell us about the job</label><textarea id="cf-message" name="message" placeholder="Rooms, surfaces, town, timeline..." rows="3"></textarea></div>
             <input type="hidden" name="_subject" value="New quote request - ${S.name}">
             <input type="hidden" name="_next" value="${S.url}/thank-you.html">
-            <div class="honeypot-field" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+            <div class="honeypot-field" aria-hidden="true"><label for="cf-gotcha">Leave blank</label><input type="text" id="cf-gotcha" name="_gotcha" tabindex="-1" autocomplete="off"></div>
             <button type="submit" class="btn btn-primary btn-full">Send My Request</button>
             <p class="form-note">Or call directly: <a href="tel:${S.tel}">${S.phone}</a></p>
           </form>
@@ -252,7 +252,7 @@ writeFileSync(
               <button class="st-review-carousel-btn next" type="button" aria-label="Next review" disabled>&#8250;</button>
             </div>
             <div class="st-review-carousel-dots" role="group" aria-label="Google review pages"></div>
-            <p class="st-google-review-links"><a href="${S.googleProfile}" target="_blank" rel="noopener noreferrer">See our Google profile</a><span aria-hidden="true">&middot;</span><a href="${S.googleProfile}" target="_blank" rel="noopener noreferrer">Leave a review</a></p>
+            <p class="st-google-review-links"><a href="${S.googleProfile}" target="_blank" rel="noopener noreferrer">See our Google profile &amp; leave a review</a></p>
             <script id="google-reviews-seed" type="application/json">{"ratingValue":5,"reviewCount":14,"reviews":[{"name":"Michael Martinko","meta":"Local Guide · 10 reviews","date":"Nov 20, 2024","text":"The owner at Sal's made this experience seamless. He answered my call on the 1st attempt.","stars":5,"avatarColor":"#1a56c4"},{"name":"Venus Vargas","meta":"5 reviews","date":"Sep 21, 2024","text":"Timely, professional and reliable. Definitely would recommend!","stars":5,"avatarColor":"#c0392b"},{"name":"laura martinko","meta":"7 reviews","date":"Mar 23, 2022","text":"Mr. Sal did a beautiful job painting all my bedrooms! Extremely professional and fantastic prices!","stars":5,"avatarColor":"#7d3c98"}]}</script>
           </div>
           <div class="st-map-panel" aria-label="Sal's Painting on Google Maps">
