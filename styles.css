@@ -2924,10 +2924,6 @@ body.home-landing .hero-panel--photo img {
   body.home-landing .hero-panel--right.hero-panel--photo {
     background-position: 100% 38%;
   }
-
-  body.home-landing .hero-cutout-wrap {
-    display: none;
-  }
 }
 
 body.home-landing .hero-panel--left.hero-panel--photo {
@@ -2969,7 +2965,7 @@ body.home-landing .hero-cutout {
   object-fit: contain;
   object-position: right bottom;
   opacity: 0;
-  transform: translate3d(16%, 0, 0);
+  transform: translate3d(28%, 0, 0);
 }
 
 body.home-landing .hero.hero-panels-ready .hero-cutout {
@@ -2979,7 +2975,7 @@ body.home-landing .hero.hero-panels-ready .hero-cutout {
 @keyframes heroCutoutEnter {
   from {
     opacity: 0;
-    transform: translate3d(16%, 0, 0);
+    transform: translate3d(28%, 0, 0);
   }
 
   to {
