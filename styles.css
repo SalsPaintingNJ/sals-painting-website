@@ -2871,7 +2871,7 @@ body.home-landing .hero {
   position: relative;
   z-index: 1;
   min-height: min(92vh, 920px);
-  overflow: visible;
+  overflow: hidden;
   background: transparent;
   display: flex;
   align-items: stretch;
@@ -2897,11 +2897,37 @@ body.home-landing .hero-panel {
 }
 
 body.home-landing .hero-panel--photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+  display: none;
+}
+
+/* Desktop wide — one banner split into 4 seamless columns (scales on ultrawide) */
+@media (min-width: 1061px) {
+  body.home-landing .hero-panel--photo {
+    background-image: url("Images/SalsHeroImage.webp");
+    background-repeat: no-repeat;
+    background-size: 400% auto;
+    background-position: 0% 38%;
+  }
+
+  body.home-landing .hero-panel--left.hero-panel--photo {
+    background-position: 0% 38%;
+  }
+
+  body.home-landing .hero-panel--top.hero-panel--photo {
+    background-position: 33.333% 38%;
+  }
+
+  body.home-landing .hero-panel--bottom.hero-panel--photo {
+    background-position: 66.667% 38%;
+  }
+
+  body.home-landing .hero-panel--right.hero-panel--photo {
+    background-position: 100% 38%;
+  }
+
+  body.home-landing .hero-cutout-wrap {
+    display: none;
+  }
 }
 
 body.home-landing .hero-panel--left.hero-panel--photo {

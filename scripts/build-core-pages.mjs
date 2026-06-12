@@ -28,23 +28,13 @@ const S = {
 };
 
 const H = "Images/hero";
-const HERO_PANELS = [
-  { src: `${H}/panel-left.webp`, w: 600, h: 900 },
-  { src: `${H}/panel-top.webp`, w: 600, h: 900 },
-  { src: `${H}/panel-bottom.webp`, w: 600, h: 900 },
-  { src: `${H}/panel-right.webp`, w: 600, h: 900 },
-];
-const heroPanel = (n) => {
-  const p = HERO_PANELS[(n - 1) % HERO_PANELS.length];
-  return `<img src="${p.src}" alt="" role="presentation" width="${p.w}" height="${p.h}" loading="eager" decoding="async">`;
-};
 const GP = "Images/gallery/parallax";
+const G = (n) => `Images/gallery/gallery-${String(n).padStart(2, "0")}.webp`;
 const PARALLAX = {
   work: `${GP}/work.webp`,
   process: `${GP}/process.webp`,
   route: `${GP}/route.webp`,
 };
-const G = (n) => `Images/gallery/gallery-${String(n).padStart(2, "0")}.webp`;
 
 writeFileSync(
   join(ROOT, "index.html"),
@@ -77,8 +67,9 @@ writeFileSync(
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" as="image" href="${H}/panel-mobile.webp" fetchpriority="high" media="(max-width: 768px)">
-  <link rel="preload" as="image" href="${H}/panel-left.webp" fetchpriority="high" media="(min-width: 769px)">
+  <link rel="preload" as="image" href="${H}/panel-mobile.webp" fetchpriority="high" media="(max-width: 1060px)">
+  <link rel="preload" as="image" href="Images/SalsHeroImage.webp" fetchpriority="high" media="(min-width: 1061px)">
+  <link rel="preload" as="image" href="${H}/panel-left.webp" fetchpriority="high" media="(min-width: 769px) and (max-width: 1060px)">
   <link rel="stylesheet" href="styles.css">
   ${HOME_SCHEMA}
   <script async src="https://www.googletagmanager.com/gtag/js?id=${S.ga}"></script>
@@ -91,10 +82,10 @@ writeFileSync(
   <main id="main-content">
     <section class="hero" aria-label="Introduction">
       <div class="hero-panels" aria-hidden="true">
-        <div class="hero-panel hero-panel--left hero-panel--photo">${heroPanel(1)}</div>
-        <div class="hero-panel hero-panel--top hero-panel--photo">${heroPanel(2)}</div>
-        <div class="hero-panel hero-panel--bottom hero-panel--photo">${heroPanel(3)}</div>
-        <div class="hero-panel hero-panel--right hero-panel--photo">${heroPanel(4)}</div>
+        <div class="hero-panel hero-panel--left hero-panel--photo"></div>
+        <div class="hero-panel hero-panel--top hero-panel--photo"></div>
+        <div class="hero-panel hero-panel--bottom hero-panel--photo"></div>
+        <div class="hero-panel hero-panel--right hero-panel--photo"></div>
       </div>
       <div class="hero-cutout-wrap" aria-hidden="true">
         <img class="hero-cutout" src="Images/SalBrochure-cutout.webp" alt="" role="presentation" width="1103" height="1426" loading="eager" decoding="async">
