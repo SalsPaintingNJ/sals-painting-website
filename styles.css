@@ -16,10 +16,10 @@
   --accent-dark:   #ba1218;
   --accent-glow:   rgba(234, 29, 35, 0.28);
   --eyebrow-accent: #ffe082;
-  --link:            var(--eyebrow-accent);
-  --link-hover:      #fff4a8;
-  --link-on-dark:    var(--eyebrow-accent);
-  --link-on-dark-hover: #fff4a8;
+  --link:            var(--ink);
+  --link-hover:      #fbbc05;
+  --link-on-dark:    var(--ink);
+  --link-on-dark-hover: #fbbc05;
   --border:        rgba(255, 255, 255, 0.08);
   --border-accent: rgba(251, 188, 5, 0.32);
   --shadow-card:   0 12px 40px rgba(0, 0, 0, 0.5);
@@ -44,14 +44,14 @@ body {
 }
 a { color: inherit; text-decoration: none; }
 
-/* Text hyperlinks — brand yellow site-wide (not buttons, cards, or icon controls) */
+/* Text hyperlinks — white default, gold hover (matches footer section titles) */
 :where(main, .site-footer, .sp-content, .sp-sidebar) a:where(
   :not(.btn):not(.brand):not(.service-card):not(.work-thumb):not(.strip-slide):not(.st-crawl-chip):not(.gallery-filter):not(.gallery-img-link):not(.social-icon):not(.header-cta):not(.hamburger-btn):not(.nav-dropdown-btn):not(.mobile-services-toggle):not(.faq-question)
 ) {
   color: var(--link);
   text-decoration: underline;
   text-underline-offset: 0.14em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 :where(main, .site-footer, .sp-content, .sp-sidebar) a:where(
@@ -215,7 +215,7 @@ ul { list-style: none; }
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--eyebrow-accent);
+  color: var(--muted);
   text-decoration: none;
   white-space: nowrap;
   line-height: 1.25;
@@ -607,10 +607,15 @@ ul { list-style: none; }
 }
 
 .form-note a {
-  color: var(--link-on-dark-hover);
+  color: var(--ink);
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 0.14em;
+}
+
+.form-note a:hover,
+.form-note a:focus-visible {
+  color: var(--link-hover);
 }
 
 .form-success {
@@ -1046,12 +1051,11 @@ ul { list-style: none; }
 }
 
 .footer-quicklinks-grid a {
-  color: var(--link);
+  color: var(--ink);
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
-  text-decoration: underline;
-  text-underline-offset: 0.14em;
+  text-decoration: none;
   text-transform: none;
   letter-spacing: normal;
   -webkit-text-stroke: 0;
@@ -1063,6 +1067,8 @@ ul { list-style: none; }
 .footer-quicklinks-grid a:hover,
 .footer-quicklinks-grid a:focus-visible {
   color: var(--link-hover);
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
   filter: none;
 }
 
@@ -1086,7 +1092,9 @@ ul { list-style: none; }
 }
 
 .footer-info strong { color: var(--ink); }
-.footer-info a { color: var(--link); text-decoration: underline; text-underline-offset: 0.14em; }
+.footer-info a { color: var(--ink); text-decoration: underline; text-underline-offset: 0.14em; }
+.footer-info a:hover,
+.footer-info a:focus-visible { color: var(--link-hover); }
 
 /* Service area strip */
 .areas-strip {
@@ -1128,15 +1136,18 @@ ul { list-style: none; }
 }
 
 .footer-links a {
-  color: var(--link);
+  color: var(--ink);
   font-size: 0.85rem;
-  text-decoration: underline;
-  text-underline-offset: 0.14em;
+  text-decoration: none;
   transition: color 0.2s;
 }
 
 .footer-links a:hover,
-.footer-links a:focus-visible { color: var(--link-hover); }
+.footer-links a:focus-visible {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
 
 .footer-copy {
   font-size: 0.78rem;
@@ -1144,7 +1155,7 @@ ul { list-style: none; }
 }
 
 .footer-copy a {
-  color: var(--link);
+  color: var(--ink);
   text-decoration: underline;
   text-underline-offset: 0.14em;
 }
