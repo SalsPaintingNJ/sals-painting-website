@@ -4,19 +4,19 @@
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "description": "Professional painting and basic renovations in Carteret and Central New Jersey. Free estimates — call or text (727) 644-7674.",
-  "background_color": "#fffaf5",
+  "description": "Professional painting and basic renovations in Carteret and Middlesex County, NJ. Free estimates — call or text (727) 644-7674.",
+  "background_color": "#031238",
   "theme_color": "#071f5c",
   "icons": [
     {
-      "src": "SalsLogo-192.png",
+      "src": "Images/SalsLogo-175.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "SalsLogo-512.png",
+      "src": "Images/SalsLogo-512.webp",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/webp"
     }
   ]
 }

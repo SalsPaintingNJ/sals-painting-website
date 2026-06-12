@@ -1,0 +1,54 @@
+{
+  "ratingValue": 5,
+  "reviewCount": 14,
+  "reviews": [
+    {
+      "name": "Michael Martinko",
+      "meta": "Local Guide · 10 reviews · 6 photos",
+      "date": "Nov 20, 2024",
+      "text": "The owner at Sal's made this experience seamless. He answered my call on the 1st attempt. Asked all the right questions and delivered exactly what we discussed.",
+      "stars": 5,
+      "avatarColor": "#1a56c4"
+    },
+    {
+      "name": "Venus Vargas",
+      "meta": "5 reviews · 1 photo",
+      "date": "Sep 21, 2024",
+      "text": "Timely, professional and reliable. Definitely would recommend and will be using this service again in the near future!",
+      "stars": 5,
+      "avatarColor": "#c0392b"
+    },
+    {
+      "name": "G Storm Sanks",
+      "meta": "Local Guide · 18 reviews · 7 photos",
+      "date": "Oct 22, 2023",
+      "text": "From the very first text to the end of the job, Sal and team was very professional and did a great job. Sal offered thoughtful color advice and the finish looked clean.",
+      "stars": 5,
+      "avatarColor": "#1e6b2e"
+    },
+    {
+      "name": "carla majano",
+      "meta": "7 reviews · 4 photos",
+      "date": "Apr 22, 2022",
+      "text": "Sal was absolutely amazing, extremely professional. We contacted him to paint an office for us, he was able to meet our timeline and the walls looked brand new.",
+      "stars": 5,
+      "avatarColor": "#d35400"
+    },
+    {
+      "name": "laura martinko",
+      "meta": "7 reviews",
+      "date": "Mar 23, 2022",
+      "text": "Mr. Sal did a beautiful job painting all my bedrooms! He was extremely professional and his prices were fantastic! I recommend him to all my friends now!!",
+      "stars": 5,
+      "avatarColor": "#7d3c98"
+    },
+    {
+      "name": "Carmerica Torres",
+      "meta": "13 reviews · 1 photo",
+      "date": "Mar 25, 2022",
+      "text": "Amazing experience, quick and professional!!!",
+      "stars": 5,
+      "avatarColor": "#117a65"
+    }
+  ]
+}

@@ -5,8 +5,9 @@
 - Website: https://salspaintingrenovation.com/
 - Phone: +1-727-644-7674
 - Text: +1-727-644-7674
+- Email: sal@salspaintingrenovation.com
 - Address: 54 Charles St, Carteret, NJ 07008
-- Service Area: Middlesex County, NJ (Carteret, Perth Amboy, Woodbridge, Rahway, Linden, Iselin, Edison, Sayreville, South Amboy)
+- Service Area: Middlesex County, NJ (roughly 25-mile radius from Carteret)
 - Hours: Monday–Sunday 7AM–9PM
 
 ## Business Details
@@ -19,62 +20,30 @@
 - Facebook: https://www.facebook.com/SalsPaintingNJ
 
 ## Services
-
-### Interior Painting
-Interior painting for walls, ceilings, trim, bedrooms, kitchens, living rooms, hallways, and whole-home repaint work in Carteret and Middlesex County.
-URL: https://salspaintingrenovation.com/interior-painting.html
-
-### Exterior Painting
-Exterior house painting for siding, trim, doors, shutters, and curb-appeal updates in Carteret and surrounding NJ towns.
-URL: https://salspaintingrenovation.com/exterior-painting.html
-
-### Drywall Repair and Prep
-Drywall repair, hole patching, sanding, priming, and surface prep before painting in Carteret, NJ.
-URL: https://salspaintingrenovation.com/drywall-repair-prep.html
-
-### Trim, Doors, and Ceilings
-Trim painting, door painting, and ceiling repaint work in Carteret and nearby Middlesex County homes.
-URL: https://salspaintingrenovation.com/trim-doors-ceilings.html
-
-### Accent Wall Painting
-Custom accent wall painting for living rooms, bedrooms, and dining spaces in Carteret, NJ.
-URL: https://salspaintingrenovation.com/accent-walls.html
-
-### Deck and Fence Staining
-Deck staining and fence painting for outdoor wood surfaces in Carteret and Middlesex County, NJ.
-URL: https://salspaintingrenovation.com/deck-fence-staining.html
-
-### Basic Renovations
-Practical home renovation work paired with painting, drywall repair, and surface updates in Carteret, NJ.
-URL: https://salspaintingrenovation.com/basic-renovations.html
+- Interior Painting: https://salspaintingrenovation.com/interior-painting.html
+- Exterior Painting: https://salspaintingrenovation.com/exterior-painting.html
+- Drywall Repair and Prep: https://salspaintingrenovation.com/drywall-repair-prep.html
+- Trim, Doors, and Ceilings: https://salspaintingrenovation.com/trim-doors-ceilings.html
+- Accent Wall Painting: https://salspaintingrenovation.com/accent-walls.html
+- Deck and Fence Staining: https://salspaintingrenovation.com/deck-fence-staining.html
+- Basic Renovations: https://salspaintingrenovation.com/basic-renovations.html
 
 ## Key Pages
 - Homepage: https://salspaintingrenovation.com/
-- Services Overview: https://salspaintingrenovation.com/services.html
-- Why Sal's (About): https://salspaintingrenovation.com/about.html
+- About Sal: https://salspaintingrenovation.com/about.html
 - Gallery: https://salspaintingrenovation.com/gallery.html
-- Service Areas: https://salspaintingrenovation.com/service-areas.html
-- Contact / Free Estimate: https://salspaintingrenovation.com/contact.html
+- Pricing Guide: https://salspaintingrenovation.com/pricing.html
+- Service Areas Hub: https://salspaintingrenovation.com/service-areas.html
+- Service Guarantee: https://salspaintingrenovation.com/service-guarantee.html
+- Contact: https://salspaintingrenovation.com/contact.html
 
-## Service Area Towns
-Carteret, Perth Amboy, Woodbridge, Rahway, Linden, Iselin, Edison, Sayreville, South Amboy — all in Middlesex County, NJ.
-
-## Frequently Asked Questions
-
-### Do you offer free estimates?
-Yes. Sal's Painting offers free estimates for all painting and renovation work. Call or text (727) 644-7674 or use the estimate form at https://salspaintingrenovation.com/contact.html
-
-### What towns does Sal's Painting serve?
-Carteret, Perth Amboy, Woodbridge, Rahway, Linden, Iselin, Edison, Sayreville, South Amboy, and nearby Middlesex County communities.
-
-### Are you available on weekends?
-Yes. Sal's Painting is available 7 days a week from 7AM to 9PM.
-
-### Do you handle drywall repair before painting?
-Yes. Patch work, sanding, priming, and surface prep are included when walls or ceilings need more than a quick repaint.
-
-### What types of painting do you do?
-Interior painting, exterior painting, deck staining, fence painting, trim and door painting, ceiling painting, accent walls, and paint prep services including drywall repair.
-
-### How do I get a painting estimate in Carteret, NJ?
-Call or text (727) 644-7674, or submit the online estimate form at https://salspaintingrenovation.com/contact.html. Include the town, surface type, and general scope for the fastest response.
+## Service Area Town Pages
+- Carteret: https://salspaintingrenovation.com/carteret-painter.html
+- Perth Amboy: https://salspaintingrenovation.com/perth-amboy-painter.html
+- Woodbridge: https://salspaintingrenovation.com/woodbridge-painter.html
+- Rahway: https://salspaintingrenovation.com/rahway-painter.html
+- Edison: https://salspaintingrenovation.com/edison-painter.html
+- Linden: https://salspaintingrenovation.com/linden-painter.html
+- Iselin: https://salspaintingrenovation.com/iselin-painter.html
+- Sayreville: https://salspaintingrenovation.com/sayreville-painter.html
+- South Amboy: https://salspaintingrenovation.com/south-amboy-painter.html

@@ -1,0 +1,11 @@
+{
+  "name": "sals-painting-website",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-sals-site.mjs && node scripts/build-remaining-pages.mjs && node scripts/build-core-pages.mjs",
+    "audit:seo": "node scripts/audit-seo.mjs",
+    "audit:schema": "node scripts/verify-schema.mjs",
+    "verify": "npm run audit:seo && npm run audit:schema",
+    "postbuild": "npm run verify"
+  }
+}
